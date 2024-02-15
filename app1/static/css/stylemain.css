@@ -1,0 +1,299 @@
+
+
+
+body {
+    margin: 0;
+    background: #FBF9F1;
+    height: 3000px;
+
+}
+
+.logo {
+    width: 220px;
+    height: 45px;
+    margin-left: -24px;
+
+}
+
+#navbar {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#header {
+
+    padding: 2px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #000000;
+}
+
+#header li{
+    list-style: none;
+    padding-right: 55px;
+    position: relative;
+}
+
+#navbar li a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #1E2B11;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #3D5A23;
+}
+
+#navbar li a.active::after,
+ #navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #3D5A23;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+
+
+#sign-up{
+    position: absolute;
+width: 76px;
+height: 30px;
+left: 1250px;
+top: 29px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+color: #1E2B11;
+}   
+
+#hero{
+    background-image: url("background.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 124px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#hero h1{
+    font-family: 'Syne', sans-serif;
+    font-style: Bold;
+    font-size: 50px;
+    color: #3D5A23;
+
+}
+#hero p{
+    margin-top: -45px;
+    font-style: Regular;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color:  #1E2B11;
+
+}
+
+
+
+
+
+.sign-btn {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #1E2B11;
+}
+
+#search{
+     margin: 45px 124px;
+}
+
+.search-box {
+  margin-top: 30px;
+  background:#fff;
+  height: 60px;
+  width: 500px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  display: flex;
+}
+
+.search-btn {
+  height: 15px;
+  width: 15px;
+  float:right;;
+  text-decoration: none;
+  display: flex;
+  margin: 22px;
+  margin-right: 0px;
+}
+
+.scan-btn {
+  height: 15px;
+  width: 17px;
+  float:right;;
+  text-decoration: none;
+  display: flex;
+  margin: 22px;
+  color: black;
+
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0px;
+  padding-left: 20px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  transition: 0.5s;
+  line-height: 52px;
+  width: 600px;
+}
+.line{
+   margin: 50px 400px;
+   
+
+
+width: 640px;
+height: 0px;
+left: 399px;
+top: 755px;
+border: 1px solid #1E2B11;
+}
+#text h1{
+position: absolute;
+width: 941px;
+height: 87px;
+left: 247px;
+top: 860px;
+
+font-family: 'Syne';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 60px;
+
+color: #3D5A23;
+
+}
+#text p{
+margin: 40px;
+position: absolute;
+width: 505px;
+height: 358px;
+left: 124px;
+top: 1023px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #1E2B11;
+
+}
+#text2 h1{
+    margin: 60px;
+position: absolute;
+width: 830px;
+height: 60px;
+left: 303px;
+top: 1525px;
+
+font-family: 'Syne';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 60px;
+
+
+color: #3D5A23;
+
+
+}
+#text2 p{
+margin: 50px 100px;
+position: absolute;
+width: 798px;
+height: 387px;
+left: 315px;
+top: 1672px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+color: #1E2B11;
+background-position: top 25% right 0;
+    
+background-color:  #FFFFFF;
+
+}
+#text3 h1{
+    margin: 50px 305;
+    position: absolute;
+width: 898px;
+height: 60px;
+left: 270px;
+top: 2205px;
+
+font-family: 'Syne';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 60px;
+
+
+color: #3D5A23;
+}
+#text3 h4{
+    margin: 50px ;
+    position: absolute;
+width: 532px;
+height: 373px;
+left: 784px;
+top: 2397px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+text-align: right;
+
+color: #1E2B11;
+
+}
+
+
+.center-main {
+   height: 626px;
+}
+
+
+

@@ -1,0 +1,24 @@
+<div class="pro">
+    <div class="{{ post.body }}"> {{post.body}}</div>
+    <img src="{{ post.image.url }}">
+    <div class="des">
+        <a href="{{ post.get_absolute_url }}">
+            {{ post.title }}
+        </a>
+        <div class="des-det">Production: {{post.production }} <br>Company: {{post.company}}</div>
+        <br>
+        <span>
+            {% for tag in post.tags.all %}
+               <a href="{{ tag.get_absolute_url }}" style="text-decoration: none; font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #7F7F7F;
+        margin-bottom: -10px;">
+                   #{{tag.title}}
+               </a>
+            {% endfor %}
+        </span>
+    </div>
+</div>

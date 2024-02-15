@@ -1,0 +1,49 @@
+{% extends 'blog/base_blog.html' %}
+
+{% block title %}
+{{ post.title }} - {{ block.super }}
+{% endblock %}
+
+{% block navbar %}
+<li><a href="{% url 'main_url' %}">Home</a></li>
+<li><a class="active" href="{% url 'posts_list_url' %}">Products</a></li>
+<li><a href="{% url 'comp_list_url' %}">Components</a></li>
+<li><a href="{% url 'rests_list_url' %}">Restourants</a></li>
+<li><a href="{% url 'aboutUs_url' %}">About us</a></li>
+{% endblock %}
+
+{% block sign %}
+{% include 'sign-text-control.html' %}
+{% endblock %}
+
+{% block content %}
+
+<section id="single-product" class="section-1">
+      <div class="single-rest-img">
+          <img src="{{ post.image.url }}" width="400px" height="400px">
+      </div>
+      <div class="rest-details">
+          <span>{% for tag in post.tags.all %}
+               <a href="{{ tag.get_absolute_url }}" style="text-decoration: none; font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #7F7F7F;
+        margin-bottom: -10px;">
+                   #{{tag.title}}
+               </a>
+            {% endfor %}
+          </span>
+          <h1> {{post.title}} </h1>
+          <br>
+
+          <div>
+           <h3>Production: {{post.production}} </h3>
+           <h3>Company: {{post.company}} </h3>
+           <h3>Components: {{post.components}} </h3>
+          </div>
+      </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'blog/base_blog.html' %}
+
+{% block title %}
+Post list
+{% endblock %}
+
+{% block navbar %}
+<li><a href="{% url 'main_url' %}">Home</a></li>
+<li><a class="active" href="{% url 'posts_list_url' %}">Products</a></li>
+<li><a href="{% url 'comp_list_url' %}">Components</a></li>
+<li><a href="{% url 'rests_list_url' %}">Restourants</a></li>
+<li><a href="{% url 'aboutUs_url' %}">About us</a></li>
+{% endblock %}
+
+{% block sign %}
+{% include 'sign-text-control.html' %}
+{% endblock %}
+
+{% block content %}
+{% include 'blog/includes/search_temp.html' %}
+<section id="products">
+    <div class="pro-container">
+        {% for post in posts %}
+        {% include 'blog/includes/product_card.html' %}
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

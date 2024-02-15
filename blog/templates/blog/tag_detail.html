@@ -1,0 +1,35 @@
+{% extends 'blog/base_blog.html' %}
+
+{% block title %}
+{{ tag.title }} - {{ block.super }}
+{% endblock %}
+
+{% block navbar %}
+<li><a href="{% url 'main_url' %}">Home</a></li>
+<li><a class="active" href="{% url 'posts_list_url' %}">Products</a></li>
+<li><a href="{% url 'comp_list_url' %}">Components</a></li>
+<li><a href="{% url 'rests_list_url' %}">Restourants</a></li>
+<li><a href="{% url 'aboutUs_url' %}">About us</a></li>
+{% endblock %}
+
+{% block sign %}
+{% include 'sign-text-control.html' %}
+{% endblock %}
+
+{% block content %}
+{% include 'blog/includes/search_temp.html' %}
+<h1 style="margin: 150px 124px -100px 124px;
+    font-family: 'Syne', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-decoration: underline;
+    color: #3D5A23;"> #{{tag.title}} </h1>
+    <section id="products">
+        <div class="pro-container">
+          {% for post in tag.posts.all %}
+           {% include 'blog/includes/product_card.html' %}
+          {% endfor %}
+        </div>
+    </section>
+{% endblock %}

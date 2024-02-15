@@ -1,0 +1,146 @@
+{% extends 'blog/base_blog.html' %}
+
+
+{% block title %}
+About Us
+{% endblock %}
+
+{% block navbar %}
+<li><a href="{% url 'home_url' %}">Home</a></li>
+<li><a href="{% url 'posts_list_url' %}">Products</a></li>
+<li><a href="{% url 'comp_list_url' %}">Components</a></li>
+<li><a href="{% url 'rests_list_url' %}">Restourants</a></li>
+<li><a class="active" href="{% url 'aboutUs_url' %}">About us</a></li>
+{% endblock %}
+
+{% block sign %}
+{% include 'sign-text-control.html' %}
+{% endblock %}
+
+{% block content %}
+
+<div class="MainContain">
+    <section id="fr-txt-cont">
+        <div class="txt1">
+            <h1 class="h11">About our team</h1>
+            <p>Our team was created on April 13, 2023. During the <br>
+                creation of this site, each member added all their idea,<br>
+                creativity, work and knowledge! The authors were <br>
+                inspired by the results of the site and the relief of the <br> using audience!
+            </p>
+        </div>
+        <img src="/static/images/teeam1.jpg">
+    </section>
+
+    <div class="team-head">Our teammates</div>
+    <section id="mem-cont">
+        <div class="fr-cont">
+            <div class="member">
+                <img src="/static/images/gulzhanat.jpg">
+                <p>Nurtay Gulzhanat</p>
+                <h4>UI/UX designer<br></h4>
+            </div>
+            <div class="member">
+                <img src="/static/images/nazgul.jpg">
+                <p>Almakyn Nazgul</p>
+                <h4>Mentor, Head designer</h4>
+            </div>
+            <div class="member">
+                <img src="/static/images/diana.jpg">
+                <p>Sarbalaeva Diana</p>
+                <h4>UI/UX designer</h4>
+            </div>
+        </div>
+        <div class="fr-cont">
+            <div class="member">
+                <img src="/static/images/ayan.jpg">
+                <p>Aibarqyzy Ayan</p>
+                <h4>Back-end developer</h4>
+            </div>
+            <div class="member">
+                <img src="/static/images/aiym.jpg">
+                <p>Yessova Aiym</p>
+                <h4>Front-end developer</h4>
+            </div>
+            <div class="member">
+                <img src="/static/images/biba2.jpg">
+                <p>Nurlybekova Bibinur</p>
+                <h4>Full-stack developer</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="sc-txt-cont">
+        <div class="headline">
+            <h1> What led us to create this site?</h1>
+        </div>
+        <div class="txt2">
+            <img src="/static/images/reas1.jpg">
+            <p>
+                Currently , there are many problems related to the
+                composition of food! We tried to take universal human
+                problems as our main focus! Since food is the daily
+                source of human energy, the purity of the food
+                composition is one of the main factors!
+                <br><br>
+                The biggest problem we face in our daily life is that the food we eat is
+                not halal, the presence of dubious additives in its
+                composition! To prevent such moments, we recommend
+                this website!
+            </p>
+        </div>
+    </section>
+
+    <section id="gl-txt-cont">
+        <div class="headline">
+            <h1>Practical Solution</h1>
+        </div>
+        <div class="txt4">
+            <div class="card">
+                <img src="/static/images/gl1.png">
+                <p>
+                    Product Scanner<br>
+                </p>
+                <h4>helps to easily find out the halal status of the product among many others,
+                    so you save your time!</h4>
+            </div>
+            <div class="card">
+                <img src="/static/images/gl3.png">
+                <p>
+                    More Places<br>
+                </p>
+                <h4>list of halal restourants, cafes and coffee shops that had been sertificated by "QMDB"</h4>
+            </div>
+            <div class="card">
+                <img src="/static/images/gl2.png">
+                <p>
+                    Proven Products<br>
+                </p>
+                <h4>the database consists of products confirmed by "QMDB" and trusted persons of this comunity</h4>
+            </div>
+        </div>
+        <img src="">
+    </section>
+
+    <section id="th-txt-cont">
+        <div class="txt3">
+        <div class="headline">
+            <h1>Our audience</h1>
+        </div>
+        <p><br>
+            Our site is dedicated to all people around the world!<br>
+            Basically,main audience is:
+        </p>
+        <h4>
+            - Muslims<br>
+            - Vegetarians<br>
+            - People with sick hearts<br>
+            - People in whom increased allergic reactions
+        </h4>
+        </div>
+        <img src="/static/images/users11.jpg">
+    </section>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends 'blog/base_blog.html' %}
+
+
+{% block title %}
+Home Page
+{% endblock %}
+
+{% block navbar %}
+<li><a class="active" href="{% url 'home_url' %}">Home</a></li>
+<li><a href="{% url 'posts_list_url' %}">Products</a></li>
+<li><a href="{% url 'comp_list_url' %}">Components</a></li>
+<li><a href="{% url 'rests_list_url' %}">Restourants</a></li>
+<li><a href="{% url 'aboutUs_url' %}">About us</a></li>
+{% endblock %}
+
+{% block sign %}
+{% include 'sign-text-control.html' %}
+{% endblock %}
+
+{% block content %}
+ <section id="hero">
+
+    <h1>Search for product</h1>
+     <p>and know weather it is halal or not</p>
+        <div class='search-box1'>
+            <input class='search-txt1' type='text' name='' placeholder="Search">
+            <a class='search-btn1' href="#">
+                <img src="/static/images/search.png">
+            </a>
+            <a class="scan-btn1" href="#">
+                <img src="/static/images/scan.png">
+            </a>
+        </div>
+  </section>
+
+  <div class="line"></div>
+
+
+  <section id="text-field1">
+   <h1 class="hed1">What you mean by halal product?</h1>
+     <div class="text-c1">
+      <div class="text1">
+       <p>
+        In Islam, Halal is an Arabic term meaning “lawful or permissible” and not only encompasses food and drink, but all matters of daily life. The opposite of Halal is Haram, which means “unlawful, not permissible or prohibited.
+        <br> <br>
+        The quality of Halal food and other products attracts a variety of consumers all around the globe. Anyone regardless their faith, gender, ethnicity, nationality, race, age- can eat ‘Halal’ and lead a ‘Halal’ lifestyle.
+        <br> <br>
+        With regards to the term “Halal” within the Food & Beverage Industry, it simply refers to anything permissible to consume. If it is used in reference to animal meat, then it means any animal which has been slaughtered in accordance with the Shariah method is Halal (lawful) to consume.
+       </p>
+      </div>
+      <img src="/static/images/woman1.png">
+     </div>
+    </section>
+
+  <div class="line"></div>
+
+
+    <section id="text-field2">
+       <h1 class="hed1">List of Haram or not permitted </h1>
+        <div class="list-box">
+            <ul id="list-ul">
+                <li><strong>Alcohol</strong> – intoxicants and narcotic drugs</li>
+                <br>
+                <li><strong>Swine and all pork</strong> by-products and/or their derivatives</li>
+                <br>
+                <li><strong>Animal Fat</strong> - may be consumed if derived from Halal slaughtered animals</li>
+                <br>
+                <li><strong>Blood and blood by-products</strong> - blood is the circulatory cleansing fluid of the body and is not to be consumed</li>
+                <br>
+                <li><strong>Carnivorous animals</strong>, birds of prey, scavengers, and animals improperly slaughtered, sick or dying before slaughter</li>
+                <br>
+                <li><strong>Idolatry</strong> - any animals or poultry sacrificed for voodoo, witchcraft or practice that denies the existence of the Creator are not to be consumed.</li>
+                <br>
+                <li>Foods contaminated with any of the above products or with "impurities” from processing, such as manure, urine, rodent droppings, infectious fluids, or pus are considered Haram.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id = "text-field3">
+       <h1 class="hed1">Benefits of eating Halal products</h1>
+       <div class="text-c3">
+           <img src="/static/images/woman2.png">
+           <div class="text3" dir="rtl">
+               <p>
+                   <strong dir="ltr">1. Safer to Eat</strong><br>
+                In Halal food, great emphasis is placed on food safety and hygiene. This means that there is also a lower incidence rate when it comes to food contamination
+                <br><br>
+                   <strong dir="ltr">2. More Ethical</strong><br>
+                It is not permissible to slaughter an animal that is sick, so animals are kept in natural and clean conditions to support disease-free growth. Animals are treated well, causing animals less stress and pain compared to modern farming techniques
+                <br><br>
+                   <strong dir="ltr">3. Improves Metabolism</strong><br>
+                Healthy consumption supports the immune system, brain and metabolic function. And metabolic function is vital in maintaining the body’s overall health
+               </p>
+           </div>
+       </div>
+    </section>
+
+{% endblock %}
